@@ -1,0 +1,103 @@
+[
+    {
+      "from": "Москва",
+      "to": "Санкт-Петербург",
+      "departureTime": "08:30",
+      "arrivalTime": "10:00",
+      "departureDate": {
+        "day": 12,
+        "month": "Декабрь",
+        "year": 2024,
+        "dayOfWeek": "Четверг"
+      },
+      "arrivalDate": {
+        "day": 12,
+        "month": "Декабрь",
+        "year": 2024,
+        "dayOfWeek": "Четверг"
+      },
+      "transfers": 0,
+      "price": 4500
+    },
+    {
+      "from": "Новосибирск",
+      "to": "Краснодар",
+      "departureTime": "14:00",
+      "arrivalTime": "20:30",
+      "departureDate": {
+        "day": 15,
+        "month": "Декабрь",
+        "year": 2024,
+        "dayOfWeek": "Воскресенье"
+      },
+      "arrivalDate": {
+        "day": 15,
+        "month": "Декабрь",
+        "year": 2024,
+        "dayOfWeek": "Воскресенье"
+      },
+      "transfers": 1,
+      "price": 12000
+    },
+    {
+      "from": "Казань",
+      "to": "Екатеринбург",
+      "departureTime": "07:15",
+      "arrivalTime": "09:50",
+      "departureDate": {
+        "day": 20,
+        "month": "Декабрь",
+        "year": 2024,
+        "dayOfWeek": "Пятница"
+      },
+      "arrivalDate": {
+        "day": 20,
+        "month": "Декабрь",
+        "year": 2024,
+        "dayOfWeek": "Пятница"
+      },
+      "transfers": 0,
+      "price": 6300
+    },
+    {
+      "from": "Сочи",
+      "to": "Москва",
+      "departureTime": "16:45",
+      "arrivalTime": "19:00",
+      "departureDate": {
+        "day": 22,
+        "month": "Декабрь",
+        "year": 2024,
+        "dayOfWeek": "Воскресенье"
+      },
+      "arrivalDate": {
+        "day": 22,
+        "month": "Декабрь",
+        "year": 2024,
+        "dayOfWeek": "Воскресенье"
+      },
+      "transfers": 0,
+      "price": 8200
+    },
+    {
+      "from": "Владивосток",
+      "to": "Иркутск",
+      "departureTime": "22:00",
+      "arrivalTime": "02:30",
+      "departureDate": {
+        "day": 25,
+        "month": "Декабрь",
+        "year": 2024,
+        "dayOfWeek": "Среда"
+      },
+      "arrivalDate": {
+        "day": 26,
+        "month": "Декабрь",
+        "year": 2024,
+        "dayOfWeek": "Четверг"
+      },
+      "transfers": 0,
+      "price": 15000
+    }
+  ]
+  
