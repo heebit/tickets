@@ -1,0 +1,29 @@
+.container{
+    margin-top: 25px;
+}
+.ticket_container {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    
+    border-radius: 5px;
+    width: 60vw; /* Ширина билета */
+}
+
+.ticket__departure{
+    
+}
+
+.ticket_arrive{
+
+}
+
+.button {
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    height: 50%;
+    width: 80%;
+    padding: 15px;
+    cursor: pointer;
+}

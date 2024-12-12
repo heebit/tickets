@@ -1,0 +1,18 @@
+.container_filter {
+    
+    display: flex;
+    position: fixed; /* Оставляем фиксированным, чтобы он оставался на месте при прокрутке */
+    height: 44vh; /* Высота фильтра */
+    width: 27vw; /* Ширина фильтра */
+    flex-direction: column;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #000;
+    padding: 10px;
+    top: 25%; /* Обеспечьте, чтобы фильтр находился в верхней части страницы */
+    left: 25px;
+    z-index: 1000; /* Высокий z-index, чтобы фильтр был выше других элементов */
+}
+input{
+    cursor: pointer;
+}

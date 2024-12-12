@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import styles from './filter.module.scss'
 
 interface FilterProps {
   onFilterChange: (filterName: string, value: number[]) => void; // Изменили тип на массив чисел
@@ -9,9 +10,10 @@ const Filter: React.FC<FilterProps> = ({ onFilterChange }) => {
 
   const handleStopsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = Number(e.target.value);
-    
+    console.log('!',selectedStops.length)
     // Если выбран чекбокс "Все"
-    if (value === -1) {
+    
+    if (value === -1 && selectedStops.length === 4) {
       setSelectedStops([]);
     } else {
       setSelectedStops((prevSelectedStops) => {
@@ -27,11 +29,21 @@ const Filter: React.FC<FilterProps> = ({ onFilterChange }) => {
   useEffect(() => {
     onFilterChange('stops', selectedStops);
   }, [selectedStops]); // Зависимость только от selectedStops
+  console.log(selectedStops)
 
   return (
-    <div>
+    <div className={styles.container_filter}>
       <h3>Количество пересадок</h3>
       <div>
+      <label>
+          <input
+            type='checkbox'
+            value='-1' // Используем -1 для "Все"
+            checked={selectedStops.length === 0}
+            onChange={handleStopsChange}
+          />
+          Все
+        </label>
         <label>
           <input
             type='checkbox'
@@ -67,15 +79,6 @@ const Filter: React.FC<FilterProps> = ({ onFilterChange }) => {
             onChange={handleStopsChange}
           />
           3 пересадки
-        </label>
-        <label>
-          <input
-            type='checkbox'
-            value='-1' // Используем -1 для "Все"
-            checked={selectedStops.length === 0}
-            onChange={handleStopsChange}
-          />
-          Все
         </label>
       </div>
     </div>

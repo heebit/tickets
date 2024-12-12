@@ -6,9 +6,10 @@
       "stops": 0,
       "departureTime": "09:25",
       "arrivalTime": "11:45",
-      "from": "VVO",
-      "to": "TLV",
-      "date": "2024-12-12"
+      "from": "VVO, Владивосток",
+      "to": "TLV, Израиль",
+      "dateArrival": "2024-12-12",
+      "dateDeparture": "2024-12-12"
     },
     {
       "id": 2,
@@ -17,9 +18,10 @@
       "stops": 1,
       "departureTime": "10:35",
       "arrivalTime": "12:34",
-      "from": "VVO",
-      "to": "TLV",
-      "date": "2024-12-12"
+      "from": "VVO, Владивосток",
+      "to": "TLV, Израиль",
+      "dateArrival": "2024-12-12",
+      "dateDeparture": "2024-12-12"
     },
     {
       "id": 3,
@@ -28,9 +30,10 @@
       "stops": 0,
       "departureTime": "08:00",
       "arrivalTime": "10:20",
-      "from": "VVO",
-      "to": "SVO",
-      "date": "2024-12-12"
+      "from": "VVO, Владивосток",
+      "to": "SVO, Москва",
+      "dateArrival": "2024-12-12",
+      "dateDeparture": "2024-12-12"
     },
     {
       "id": 4,
@@ -39,9 +42,10 @@
       "stops": 2,
       "departureTime": "14:30",
       "arrivalTime": "22:15",
-      "from": "VVO",
-      "to": "CDG",
-      "date": "2024-12-13"
+      "from": "VVO, Владивосток",
+      "to": "CDG, Париж",
+      "dateArrival": "2024-12-13",
+      "dateDeparture": "2024-12-12"
     },
     {
       "id": 5,
@@ -50,9 +54,10 @@
       "stops": 0,
       "departureTime": "13:15",
       "arrivalTime": "15:45",
-      "from": "VVO",
-      "to": "LED",
-      "date": "2024-12-12"
+      "from": "VVO, Владивосток",
+      "to": "LED, Санкт-Петербург",
+      "dateArrival": "2024-12-12",
+      "dateDeparture": "2024-12-12"
     },
     {
       "id": 6,
@@ -61,9 +66,10 @@
       "stops": 1,
       "departureTime": "20:00",
       "arrivalTime": "08:00",
-      "from": "VVO",
-      "to": "DXB",
-      "date": "2024-12-12"
+      "from": "VVO, Владивосток",
+      "to": "DXB, Дубай",
+      "dateArrival": "2024-12-12",
+      "dateDeparture": "2024-12-12"
     },
     {
       "id": 7,
@@ -72,9 +78,10 @@
       "stops": 1,
       "departureTime": "17:45",
       "arrivalTime": "05:20",
-      "from": "VVO",
-      "to": "DOH",
-      "date": "2024-12-12"
+      "from": "VVO, Владивосток",
+      "to": "DOH, Доха",
+      "dateArrival": "2024-12-12",
+      "dateDeparture": "2024-12-12"
     },
     {
       "id": 8,
@@ -83,9 +90,10 @@
       "stops": 0,
       "departureTime": "06:45",
       "arrivalTime": "09:30",
-      "from": "VVO",
-      "to": "IKT",
-      "date": "2024-12-12"
+      "from": "VVO, Владивосток",
+      "to": "IKT, Иркутск",
+      "dateArrival": "2024-12-12",
+      "dateDeparture": "2024-12-12"
     },
     {
       "id": 9,
@@ -94,9 +102,10 @@
       "stops": 2,
       "departureTime": "12:00",
       "arrivalTime": "19:00",
-      "from": "VVO",
-      "to": "ICN",
-      "date": "2024-12-12"
+      "from": "VVO, Владивосток",
+      "to": "ICN, Сеул",
+      "dateArrival": "2024-12-12",
+      "dateDeparture": "2024-12-12"
     },
     {
       "id": 10,
@@ -105,9 +114,10 @@
       "stops": 1,
       "departureTime": "11:00",
       "arrivalTime": "19:45",
-      "from": "VVO",
-      "to": "NRT",
-      "date": "2024-12-12"
+      "from": "VVO, Владивосток",
+      "to": "NRT, Токио",
+      "dateArrival": "2024-12-12",
+      "dateDeparture": "2024-12-12"
     },
     {
       "id": 11,
@@ -116,20 +126,22 @@
       "stops": 3,
       "departureTime": "05:00",
       "arrivalTime": "23:15",
-      "from": "VVO",
-      "to": "JFK",
-      "date": "2024-12-12"
+      "from": "VVO, Владивосток",
+      "to": "JFK, Нью-Йорк",
+      "dateArrival": "2024-12-12",
+      "dateDeparture": "2024-12-12"
     },
     {
       "id": 12,
-      "airline": "British Airways",
-      "price": 60000,
-      "stops": 3,
-      "departureTime": "07:00",
-      "arrivalTime": "02:30",
-      "from": "VVO",
-      "to": "LHR",
-      "date": "2024-12-12"
+      "airline": "British Airways",//
+      "price": 60000,//
+      "stops": 3,//
+      "departureTime": "07:00",//
+      "arrivalTime": "02:30",//
+      "from": "VVO, Владивосток",//
+      "to": "LHR, Лондон",//
+      "dateArrival": "2024-12-12",//
+      "dateDeparture": "2024-12-12"//
     },
     {
       "id": 13,
@@ -138,9 +150,9 @@
       "stops": 3,
       "departureTime": "16:00",
       "arrivalTime": "15:00",
-      "from": "VVO",
-      "to": "SYD",
-      "date": "2024-12-12"
+      "from": "VVO, Владивосток",
+      "to": "SYD, Сидней",
+      "dateArrival": "2024-12-12",
+      "dateDeparture": "2024-12-12"
     }
-  ]
-  
+]

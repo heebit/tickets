@@ -7,6 +7,7 @@ export interface Ticket {
     arrivalTime: string;
     from: string;
     to: string;
-    date: string;
+    dateArrival: string;
+    dateDeparture:string;
   }
   

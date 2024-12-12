@@ -1,8 +1,9 @@
 import React, { useState, useCallback } from "react";
-import TicketList from "./components/TicketList";
-import Filter from "./components/Filter";
+import TicketList from "./components/TicketList/TicketList";
+import Filter from "./components/Filter/Filter";
 import ticketsData from "./tickets.json";
 import { Ticket } from "./types/ticket";
+import styles from "./App.module.scss"
 
 const App: React.FC = () => {
   const [filters, setFilters] = useState<{ stops: number[] }>({
@@ -28,9 +29,13 @@ const App: React.FC = () => {
   const sortedTickets = filteredTickets.sort((a, b) => a.price - b.price); // Сортировка по цене
 console.log(filters)
   return (
-    <div>
+    <div className={styles.container}>
+      <div className={styles.filter}>
       <Filter onFilterChange={handleFilterChange} />
+      </div>
+      <div className={styles.ticket_list}>
       <TicketList tickets={sortedTickets} />
+      </div>
     </div>
   );
 };
