@@ -1,29 +1,99 @@
-.container{
-    margin-top: 25px;
+
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  height: 26vh;
+  text-align: center;
+  font-size: 0.9rem;
+  
 }
+
+@mixin ticket_time {
+    
+  p {
+    margin: 0;
+  }
+  p:first-child {
+    font-size: 40px;
+  }
+  p:nth-of-type(2) {
+    font-weight: bold;
+    overflow: visible; /* Разрешает выход текста за пределы контейнера */
+  white-space: nowrap
+  }
+ 
+}
+
 .ticket_container {
+  margin: 15px 15px;
+  display: flex;
+  border: 1px solid #ccc;
+//   padding: 10px;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 55vw;
+  background: #ffffff;
+  color: #000;
+
+  .ticket_info{
+    width: 100%;
     display: flex;
-    border: 1px solid #ccc;
-    padding: 10px;
+    justify-content: space-between;
+  }
+
+  .ticket_buy {
+    @include flex-center;
+    width: 45%;
+    border: 0.001px #ccc solid;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ticket_buy_logo img {
+    padding-top: 15%;
+    width: 85%; /* Установите нужную ширину */
+    height: auto; /* Сохранение пропорций изображения */
+    max-width: 100%; /* Предотвращение выхода за границы контейнера */
+  }
+  
+  .ticket_departure {
+    overflow: visible; /* Позволяет содержимому выходить за пределы контейнера */
+  white-space: nowrap;
+    margin-left: 6%;
+    align-items: start;
+    @include ticket_time;
+    @include flex-center;
+  }
+
+  .ticket_stops {
+    height: 10px;
     
-    border-radius: 5px;
-    width: 60vw; /* Ширина билета */
-}
-
-.ticket__departure{
+    margin-right: 5%;
+    @include flex-center;
+  }
+  .ticket_stops__line{
+    position: relative;
+    border-top: #ccc solid;
+    width: 150%;
+    right: 20%;
     
-}
+  }
 
-.ticket_arrive{
-
+  .ticket_arrive {
+    
+    margin-right: 6%;
+    align-items: end;
+    @include ticket_time;
+    @include flex-center;
+  }
 }
 
 .button {
-    background: #ff5722;
-    color: #fff;
-    border: none;
-    height: 50%;
-    width: 80%;
-    padding: 15px;
-    cursor: pointer;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  height: 8vh;
+  width: 11vw;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }

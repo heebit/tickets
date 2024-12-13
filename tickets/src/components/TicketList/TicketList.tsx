@@ -11,30 +11,35 @@ const TicketList: React.FC<TicketListProps> = ({ tickets }) => {
     <div className={styles.container}>
       {tickets.map((ticket) => (
         <div key={ticket.id} className={styles.ticket_container}>
-
           <div className={styles.ticket_buy}>
-            <h3>{ticket.airline}</h3>
+            
+          <div className={styles.ticket_buy_logo}>
+            <img src='/logo.png' alt="logo" />
+          </div>
             <button className={styles.button}>
               Купить за {ticket.price} ₽
             </button>
           </div>
+          <div className={styles.ticket_info}>
+            {/*отбытие*/}
+            <div className={styles.ticket_departure}>
+              <p>{ticket.departureTime}</p>
+              <p>{ticket.from} </p>
+              <p>{ticket.dateDeparture}</p>
+            </div>
 
-          {/*отбытие*/}
-          <div className={styles.ticket__departure}>
-            <p>{ticket.departureTime}</p>
-            <p>{ticket.from} </p>
-            <p>{ticket.dateDeparture}</p>
+            <div className={styles.ticket_stops}>
+              <p>{ticket.stops} пересадок </p>
+              <div className={styles.ticket_stops__line}></div>
+            </div>
+
+            {/*прибытие*/}
+            <div className={styles.ticket_arrive}>
+              <p>{ticket.arrivalTime}</p>
+              <p>{ticket.to}</p>
+              <p> {ticket.dateArrival} </p>
+            </div>
           </div>
-
-          <p>{ticket.stops} пересадок </p>
-
-          {/*прибытие*/}
-          <div className={styles.ticket_arrive}>
-            <p>{ticket.arrivalTime}</p>
-            <p>{ticket.to}</p>
-            <p> {ticket.dateArrival} </p>
-          </div>
-
         </div>
       ))}
     </div>

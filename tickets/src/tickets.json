@@ -7,9 +7,9 @@
       "departureTime": "09:25",
       "arrivalTime": "11:45",
       "from": "VVO, Владивосток",
-      "to": "TLV, Израиль",
-      "dateArrival": "2024-12-12",
-      "dateDeparture": "2024-12-12"
+      "to": "IST, Стамбул",
+      "dateArrival": "12 дек 2024, Чт",
+      "dateDeparture": "12 дек 2024, Чт"
     },
     {
       "id": 2,
@@ -19,140 +19,141 @@
       "departureTime": "10:35",
       "arrivalTime": "12:34",
       "from": "VVO, Владивосток",
-      "to": "TLV, Израиль",
-      "dateArrival": "2024-12-12",
-      "dateDeparture": "2024-12-12"
+      "to": "ESB, Анкара",
+      "dateArrival": "13 дек 2024, Пт",
+      "dateDeparture": "12 дек 2024, Чт"
     },
     {
       "id": 3,
-      "airline": "Aeroflot",
+      "airline": "Turkish Airlines",
       "price": 18999,
       "stops": 0,
       "departureTime": "08:00",
       "arrivalTime": "10:20",
       "from": "VVO, Владивосток",
-      "to": "SVO, Москва",
-      "dateArrival": "2024-12-12",
-      "dateDeparture": "2024-12-12"
+      "to": "ADB, Измир",
+      "dateArrival": "11 дек 2024, Ср",
+      "dateDeparture": "11 дек 2024, Ср"
     },
     {
       "id": 4,
-      "airline": "Aeroflot",
+      "airline": "Turkish Airlines",
       "price": 25300,
       "stops": 2,
       "departureTime": "14:30",
       "arrivalTime": "22:15",
       "from": "VVO, Владивосток",
-      "to": "CDG, Париж",
-      "dateArrival": "2024-12-13",
-      "dateDeparture": "2024-12-12"
+      "to": "AYT, Анталья",
+      "dateArrival": "14 дек 2024, Сб",
+      "dateDeparture": "13 дек 2024, Пт"
     },
     {
       "id": 5,
-      "airline": "S7 Airlines",
+      "airline": "Turkish Airlines",
       "price": 17200,
       "stops": 0,
       "departureTime": "13:15",
       "arrivalTime": "15:45",
       "from": "VVO, Владивосток",
-      "to": "LED, Санкт-Петербург",
-      "dateArrival": "2024-12-12",
-      "dateDeparture": "2024-12-12"
+      "to": "DLM, Даламан",
+      "dateArrival": "10 дек 2024, Вт",
+      "dateDeparture": "10 дек 2024, Вт"
     },
     {
       "id": 6,
-      "airline": "Emirates",
+      "airline": "Turkish Airlines",
       "price": 34000,
       "stops": 1,
       "departureTime": "20:00",
       "arrivalTime": "08:00",
       "from": "VVO, Владивосток",
-      "to": "DXB, Дубай",
-      "dateArrival": "2024-12-12",
-      "dateDeparture": "2024-12-12"
+      "to": "TZX, Трабзон",
+      "dateArrival": "11 дек 2024, Ср",
+      "dateDeparture": "10 дек 2024, Вт"
     },
     {
       "id": 7,
-      "airline": "Qatar Airways",
+      "airline": "Turkish Airlines",
       "price": 29999,
       "stops": 1,
       "departureTime": "17:45",
       "arrivalTime": "05:20",
       "from": "VVO, Владивосток",
-      "to": "DOH, Доха",
-      "dateArrival": "2024-12-12",
-      "dateDeparture": "2024-12-12"
+      "to": "SAW, Стамбул (Сабиха Гёкчен)",
+      "dateArrival": "15 дек 2024, Вс",
+      "dateDeparture": "14 дек 2024, Сб"
     },
     {
       "id": 8,
-      "airline": "Ural Airlines",
+      "airline": "Turkish Airlines",
       "price": 15800,
       "stops": 0,
       "departureTime": "06:45",
       "arrivalTime": "09:30",
       "from": "VVO, Владивосток",
-      "to": "IKT, Иркутск",
-      "dateArrival": "2024-12-12",
-      "dateDeparture": "2024-12-12"
+      "to": "GZT, Газиантеп",
+      "dateArrival": "09 дек 2024, Пн",
+      "dateDeparture": "09 дек 2024, Пн"
     },
     {
       "id": 9,
-      "airline": "Korean Air",
+      "airline": "Turkish Airlines",
       "price": 45000,
       "stops": 2,
       "departureTime": "12:00",
       "arrivalTime": "19:00",
       "from": "VVO, Владивосток",
-      "to": "ICN, Сеул",
-      "dateArrival": "2024-12-12",
-      "dateDeparture": "2024-12-12"
+      "to": "BJV, Бодрум",
+      "dateArrival": "13 дек 2024, Пт",
+      "dateDeparture": "12 дек 2024, Чт"
     },
     {
       "id": 10,
-      "airline": "Japan Airlines",
+      "airline": "Turkish Airlines",
       "price": 38000,
       "stops": 1,
       "departureTime": "11:00",
       "arrivalTime": "19:45",
       "from": "VVO, Владивосток",
-      "to": "NRT, Токио",
-      "dateArrival": "2024-12-12",
-      "dateDeparture": "2024-12-12"
+      "to": "ERZ, Эрзурум",
+      "dateArrival": "14 дек 2024, Сб",
+      "dateDeparture": "13 дек 2024, Пт"
     },
     {
-      "id": 11,
-      "airline": "Lufthansa",
-      "price": 55000,
-      "stops": 3,
-      "departureTime": "05:00",
-      "arrivalTime": "23:15",
-      "from": "VVO, Владивосток",
-      "to": "JFK, Нью-Йорк",
-      "dateArrival": "2024-12-12",
-      "dateDeparture": "2024-12-12"
-    },
-    {
-      "id": 12,
-      "airline": "British Airways",//
-      "price": 60000,//
-      "stops": 3,//
-      "departureTime": "07:00",//
-      "arrivalTime": "02:30",//
-      "from": "VVO, Владивосток",//
-      "to": "LHR, Лондон",//
-      "dateArrival": "2024-12-12",//
-      "dateDeparture": "2024-12-12"//
-    },
-    {
-      "id": 13,
-      "airline": "Etihad Airways",
-      "price": 52000,
-      "stops": 3,
-      "departureTime": "16:00",
-      "arrivalTime": "15:00",
-      "from": "VVO, Владивосток",
-      "to": "SYD, Сидней",
-      "dateArrival": "2024-12-12",
-      "dateDeparture": "2024-12-12"
-    }
-]
+        "id": 11,
+        "airline": "Turkish Airlines",
+        "price": 55000,
+        "stops": 3,
+        "departureTime": "05:00",
+        "arrivalTime": "23:15",
+        "from": "VVO, Владивосток",
+        "to": "ERZ, Эрзурум",
+        "dateArrival": "15 дек 2024, Вс",
+        "dateDeparture": "14 дек 2024, Сб"
+      },
+      {
+        "id": 12,
+        "airline": "Turkish Airlines",
+        "price": 60000,
+        "stops": 3,
+        "departureTime": "07:00",
+        "arrivalTime": "02:30",
+        "from": "VVO, Владивосток",
+        "to": "ERZ, Эрзурум",
+        "dateArrival": "16 дек 2024, Пн",
+        "dateDeparture": "15 дек 2024, Вс"
+      },
+      {
+        "id": 13,
+        "airline": "Turkish Airlines",
+        "price": 52000,
+        "stops": 3,
+        "departureTime": "16:00",
+        "arrivalTime": "15:00",
+        "from": "VVO, Владивосток",
+        "to": "ERZ, Эрзурум",
+        "dateArrival": "17 дек 2024, Вт",
+        "dateDeparture": "16 дек 2024, Пн"
+      }
+  ]
+  
