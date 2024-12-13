@@ -17,7 +17,7 @@ const TicketList: React.FC<TicketListProps> = ({ tickets }) => {
             <img src='/logo.png' alt="logo" />
           </div>
             <button className={styles.button}>
-              Купить за {ticket.price} ₽
+              Купить <br /> за {ticket.price.toLocaleString('ru-RU')} ₽
             </button>
           </div>
           <div className={styles.ticket_info}>

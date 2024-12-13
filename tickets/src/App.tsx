@@ -7,26 +7,25 @@ import styles from "./App.module.scss"
 
 const App: React.FC = () => {
   const [filters, setFilters] = useState<{ stops: number[] }>({
-    stops: [], // Инициализируем массив для пересадок
+    stops: [],
   });
 
-  // Используем useCallback для оптимизации функции
+  
   const handleFilterChange = useCallback((filterName: string, value: number[]) => {
     if (filterName === "stops") {
       setFilters((prevFilters) => ({
         ...prevFilters,
-        stops: value, // Сохраняем массив выбранных значений
+        stops: value,
       }));
     }
-  }, []); // Пустой массив зависимостей, чтобы функция не пересоздавалась
+  }, []); 
 
-  // Фильтрация билетов на основе выбранных пересадок
   const filteredTickets = ticketsData.filter((ticket: Ticket) => {
-    if (filters.stops.length === 0) return true; // Если фильтры не выбраны, возвращаем все билеты
-    return filters.stops.includes(ticket.stops); // Проверяем, входит ли количество пересадок в выбранные значения
+    if (filters.stops.length === 0) return true;
+    return filters.stops.includes(ticket.stops);
   });
 
-  const sortedTickets = filteredTickets.sort((a, b) => a.price - b.price); // Сортировка по цене
+  const sortedTickets = filteredTickets.sort((a, b) => a.price - b.price);
 console.log(filters)
   return (
     <div className={styles.container}>
