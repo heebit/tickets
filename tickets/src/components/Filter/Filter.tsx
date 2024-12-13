@@ -1,86 +1,74 @@
 import React, { useEffect } from 'react';
-import styles from './filter.module.scss'
+
+import styles from './filter.module.scss';
+import { Checkbox, Stack } from '@chakra-ui/react';
 
 interface FilterProps {
-  onFilterChange: (filterName: string, value: number[]) => void; // Изменили тип на массив чисел
+  onFilterChange: (filterName: string, value: number[]) => void; 
 }
 
 const Filter: React.FC<FilterProps> = ({ onFilterChange }) => {
-  const [selectedStops, setSelectedStops] = React.useState<number[]>([]); // Состояние для хранения выбранных пересадок
-
-  const handleStopsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = Number(e.target.value);
-    console.log('!',selectedStops.length)
-    // Если выбран чекбокс "Все"
-    
+  const [selectedStops, setSelectedStops] = React.useState<number[]>([]);
+  
+  const handleStopsChange = (value: number) => {
     if (value === -1 && selectedStops.length === 4) {
       setSelectedStops([]);
     } else {
       setSelectedStops((prevSelectedStops) => {
         const newSelectedStops = prevSelectedStops.includes(value)
-          ? prevSelectedStops.filter(stop => stop !== value) // Убираем выбранное значение
-          : [...prevSelectedStops, value]; // Добавляем новое значение
-        return newSelectedStops; // Возвращаем новый массив для состояния
+          ? prevSelectedStops.filter(stop => stop !== value)
+          : [...prevSelectedStops, value]; 
+        return newSelectedStops;
       });
     }
   };
 
-  // Используйте useEffect, чтобы обновить родительский компонент после изменения состояния
   useEffect(() => {
     onFilterChange('stops', selectedStops);
-  }, [selectedStops]); // Зависимость только от selectedStops
-  console.log(selectedStops)
+  }, [selectedStops]);
+
+  console.log(selectedStops);
 
   return (
     <div className={styles.container_filter}>
       <h3>Количество пересадок</h3>
-      <div>
-      <label>
-          <input
-            type='checkbox'
-            value='-1' // Используем -1 для "Все"
-            checked={selectedStops.length === 0}
-            onChange={handleStopsChange}
-          />
+      <Stack spacing={3}>
+        <Checkbox
+          isChecked={selectedStops.length === 0}
+          onChange={() => handleStopsChange(-1)}
+          variant="outline"
+        >
           Все
-        </label>
-        <label>
-          <input
-            type='checkbox'
-            value='0'
-            checked={selectedStops.includes(0)}
-            onChange={handleStopsChange}
-          />
+        </Checkbox>
+        <Checkbox
+          isChecked={selectedStops.includes(0)}
+          onChange={() => handleStopsChange(0)}
+          variant="outline"
+        >
           Без пересадок
-        </label>
-        <label>
-          <input
-            type='checkbox'
-            value='1'
-            checked={selectedStops.includes(1)}
-            onChange={handleStopsChange}
-          />
+        </Checkbox>
+        <Checkbox
+          isChecked={selectedStops.includes(1)}
+          onChange={() => handleStopsChange(1)}
+          variant="outline"
+        >
           1 пересадка
-        </label>
-        <label>
-          <input
-            type='checkbox'
-            value='2'
-            checked={selectedStops.includes(2)}
-            onChange={handleStopsChange}
-          />
+        </Checkbox>
+        <Checkbox
+          isChecked={selectedStops.includes(2)}
+          onChange={() => handleStopsChange(2)}
+          variant="outline"
+        >
           2 пересадки
-        </label>
-        <label>
-          <input
-            type='checkbox'
-            value='3'
-            checked={selectedStops.includes(3)}
-            onChange={handleStopsChange}
-          />
+        </Checkbox>
+        <Checkbox
+          isChecked={selectedStops.includes(3)}
+          onChange={() => handleStopsChange(3)}
+          variant="outline"
+        >
           3 пересадки
-        </label>
-      </div>
+        </Checkbox>
+      </Stack>
     </div>
   );
 };
