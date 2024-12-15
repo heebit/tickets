@@ -1,0 +1,36 @@
+button:focus-visible{
+    outline: none;
+}
+.currencyButton {
+    color: #a4d3f9;
+    padding: 7% 10%;
+    background: #ffffff;
+    border: #EEEFF0 solid 1px;
+    border-radius: 0;
+    font-weight: bold;
+    cursor: pointer;
+  
+    &:hover {
+      background: #f2fcfe;
+      border: #acd8f9 solid 2px;
+    }
+
+    &:focus{
+        border: none;
+        color: none;
+    }
+  
+    &.active {
+      background: #2196f3;
+      color: #bbdefb;
+    }
+  
+    &:first-child {
+      border-radius: 8px 0 0 8px; 
+    }
+  
+    &:last-child {
+      border-radius: 0 8px 8px 0;
+    }
+  }
+  

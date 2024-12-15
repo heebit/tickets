@@ -1,42 +1,57 @@
-import React, { useState } from 'react';
+import React, { createContext, useState } from 'react';
+import styles from './currrency.module.scss'
 
-interface CurrencyProps {
-  onCurrencyChange: (currency: string) => void;
+interface CurrencyContextType {
+  currency: string;
+  setCurrency: (currency: string) => void;
 }
 
-const Currency: React.FC<CurrencyProps> = ({ onCurrencyChange }) => {
+export const CurrencyContext = createContext<CurrencyContextType>({
+  currency: 'RUB',
+  setCurrency: () => {}, 
+});
+
+const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [currency, setCurrency] = useState<string>('RUB');
 
-  const handleCurrencyChange = (newCurrency: string) => {
-    setCurrency(newCurrency);
-    onCurrencyChange(newCurrency);
-  };
-
   return (
-    <>
-      <h3>Валюта</h3>
-      <div className='currency-switcher'>
-        <button
-          className={`currency-button ${currency === 'RUB' ? 'active' : ''}`}
-          onClick={() => handleCurrencyChange('RUB')}
-        >
-          RUB
-        </button>
-        <button
-          className={`currency-button ${currency === 'USD' ? 'active' : ''}`}
-          onClick={() => handleCurrencyChange('USD')}
-        >
-          USD
-        </button>
-        <button
-          className={`currency-button ${currency === 'EUR' ? 'active' : ''}`}
-          onClick={() => handleCurrencyChange('EUR')}
-        >
-          EUR
-        </button>
-      </div>
-    </>
+    <CurrencyContext.Provider value={{ currency, setCurrency }}>
+      {children}
+    </CurrencyContext.Provider>
   );
 };
 
-export default Currency;
+export const CurrencySwitcher: React.FC = () => {
+  const { currency, setCurrency } = React.useContext(CurrencyContext);
+
+  return (
+    <div>
+      <button
+        className={`${styles.currencyButton} ${
+          currency === 'RUB' ? styles.active : ''
+        }`}
+        onClick={() => setCurrency('RUB')}
+      >
+        RUB
+      </button>
+      <button
+        className={`${styles.currencyButton} ${
+          currency === 'USD' ? styles.active : ''
+        }`}
+        onClick={() => setCurrency('USD')}
+      >
+        USD
+      </button>
+      <button
+        className={`${styles.currencyButton} ${
+          currency === 'EUR' ? styles.active : ''
+        }`}
+        onClick={() => setCurrency('EUR')}
+      >
+        EUR
+      </button>
+    </div>
+  );
+};
+
+export default CurrencyProvider;
